@@ -21,6 +21,9 @@ __Install Python 3.9.1:__
 `brew install python`
 
 
-__Install Numpy:__
+__Install Numpy & Tensorflow:__
+
+Download Apple's Tensorflow package.
+https://github.com/apple/tensorflow_macos/releases/download/v0.1alpha1/tensorflow_macos-0.1alpha1.tar.gz
 
 `poetry add ./path/to/package.whl`
