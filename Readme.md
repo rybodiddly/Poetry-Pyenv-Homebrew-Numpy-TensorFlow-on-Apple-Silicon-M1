@@ -49,7 +49,7 @@ __Install python 3.9.x:__
 
 `brew install python`
 - restart terminal
-- make sure `python3` results in newly indstalled version
+- make sure `python3 -V` results in newly installed version
 
 __Install pipx to manage global packages:__
 ```
