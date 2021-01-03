@@ -165,3 +165,4 @@ __Sources:__
 - https://gist.githubusercontent.com/nrubin29/bea5aa83e8dfa91370fe83b62dad6dfa/raw/48f48f7fef21abb308e129a80b3214c2538fc611/homebrew_m1.sh
 - https://towardsdatascience.com/tensorflow-2-4-on-apple-silicon-m1-installation-under-conda-environment-ba6de962b3b8
 - https://github.com/pyenv/pyenv/issues/1767
+- https://github.com/python-poetry/poetry/issues/76
