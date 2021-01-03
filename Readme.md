@@ -17,6 +17,10 @@ echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
 ```
 
 __Install Python 3.9.1:__
+
 `brew install python`
 
 
+__Install Numpy:__
+
+`poetry add ./path/to/package.whl`
