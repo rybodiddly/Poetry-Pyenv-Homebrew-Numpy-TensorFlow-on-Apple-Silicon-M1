@@ -53,10 +53,15 @@ __Install python 3.9.x:__
 - restart terminal
 - make sure `python3 -V` results in newly installed version
 
+
 __Install pipx to manage global packages:__
 ```
 python3 -m pip install --user pipx
-python3 -m userpath append ~/.local/bin# Install global packages
+python3 -m userpath append ~/.local/bin
+```
+
+__Install global packages:__
+```
 python3 -m pipx install flake8
 python3 -m pipx install black
 ```
