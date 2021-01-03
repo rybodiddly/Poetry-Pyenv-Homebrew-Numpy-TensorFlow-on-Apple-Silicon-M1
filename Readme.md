@@ -1,5 +1,7 @@
 # Setup guide for dev environment on Apple Silicon.
 
+A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Numpy and Tensorflow on new Apple Silicon M1 macs.
+
 
 __Install Xcode:__
 - install xcode from app store v12+
@@ -130,15 +132,15 @@ pyenv local 3.8.6
 if check python version with `python -V` should result in `3.8.6`
 
 
-__Install Numpy & Tensorflow:__
+__Manually Install Numpy & Tensorflow into Poetry Environment:__
 
 - Download Apple's Tensorflow package.
 - https://github.com/apple/tensorflow_macos/releases/download/v0.1alpha1/tensorflow_macos-0.1alpha1.tar.gz
 - extract
 - create a packages folder in your new poetry project
-- copy numpy or tensorflow into the packages folder
+- copy numpy or tensorflow from the apple tensorflow's arm64 folder into the packages folder
 
 ```
 cd name_of_project
-poetry add ./packages/name_of_package.whl
+poetry add ./packages/name_of_package_ARM64.whl
 ```
