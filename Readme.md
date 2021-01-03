@@ -1,6 +1,6 @@
 # Setup guide for dev environment on Apple Silicon.
 
-A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Numpy and Tensorflow on new Apple Silicon M1 macs.
+A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Numpy and Tensorflow on new Apple Silicon M1 macs. Note that while working through this guide, it's best practice to restart your terminal after each instalaltion / major change affecting your .zshrc file.
 
 
 __Install Xcode:__
