@@ -144,8 +144,7 @@ __Manually Install Numpy & Tensorflow into Poetry Environment:__
 - https://github.com/apple/tensorflow_macos/releases/download/v0.1alpha1/tensorflow_macos-0.1alpha1.tar.gz
 - extract
 - create a packages folder in your new poetry project
-- copy numpy or tensorflow from the apple tensorflow's arm64 folder into the packages folder
-
+- copy numpy or tensorflow from the apple tensorflow's arm64 folder into the packages folder you created inside you poetry project
 ```
 cd name_of_project
 poetry add ./packages/name_of_package_ARM64.whl
