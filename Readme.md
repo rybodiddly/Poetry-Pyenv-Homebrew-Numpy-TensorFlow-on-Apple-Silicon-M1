@@ -134,7 +134,8 @@ poetry new name_of_project
 cd name_of_project
 pyenv local 3.8.6
 ```
-if check python version with `python -V` should result in `3.8.6`
+- check python version with `python -V`
+- should result in `3.8.6`
 
 
 __Manually Install Numpy & Tensorflow into Poetry Environment:__
