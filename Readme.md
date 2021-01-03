@@ -149,3 +149,6 @@ __Manually Install Numpy & Tensorflow into Poetry Environment:__
 cd name_of_project
 poetry add ./packages/name_of_package_ARM64.whl
 ```
+
+__Download VSCode for MacOS Arm64:__
+- https://code.visualstudio.com/insiders/#
