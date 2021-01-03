@@ -112,7 +112,7 @@ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.p
 poetry config virtualenvs.in-project true
 ```
 
-__Project Python Packages from Mishaps:__
+__Protect Global & Brew Python Packages from Mishaps:__
 
 - add following to bottom of .zshrc
 ```
