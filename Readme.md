@@ -16,6 +16,7 @@ __Install Xcode:__
 - add SDKROOT Path to .zshrc file
 
 `export SDKROOT="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"`
+- restart terminal
 
 
 __Install Homebrew:__
@@ -26,6 +27,8 @@ sudo chown -R $(whoami) /opt/homebrew
 curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
 echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
 ```
+- restart terminal
+
 
 __Install brew dependencies:__
 
@@ -46,11 +49,12 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 ```
+- restart terminal
+
 
 __Install python 3.9.x:__
 
 `brew install python`
-- restart terminal
 - make sure `python3 -V` results in newly installed version
 
 
