@@ -4,8 +4,9 @@ __Install Xcode:__
 - install xcode from app store v12+
 - set version under Preferences > Locations
 
-img
+!(https://github.com/rybodiddly/Poetry-Pyenv-Homebrew-Numpy-TensorFlow-on-Apple-Silicon-M1/Xcode.jpg)
 
+`xcode-select --install`
 
 __Install Homebrew:__
 ```
