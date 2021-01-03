@@ -87,7 +87,7 @@ alias python="python3"
 # pipx
 export PATH="~/.local/bin:$PATH"
 ```
-- note the create of a python3 Alias in the snippet above, this will prevent poetry from defaulting to python 2.
+- note the creation of a python3 Alias in the snippet above, this will prevent poetry from defaulting to python 2.
 
 
 __Install Python 3.9.1 in Pyenv:__
