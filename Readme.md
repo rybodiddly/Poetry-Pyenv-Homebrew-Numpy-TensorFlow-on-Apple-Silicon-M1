@@ -151,4 +151,4 @@ poetry add ./packages/name_of_package_ARM64.whl
 ```
 
 __Download VSCode for MacOS Arm64:__
-- https://code.visualstudio.com/insiders/#
+- https://code.visualstudio.com/docs/?dv=darwinarm64&build=insiders
