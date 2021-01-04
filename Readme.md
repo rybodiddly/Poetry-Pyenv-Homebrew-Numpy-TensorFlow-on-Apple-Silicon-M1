@@ -11,7 +11,7 @@ __Install Xcode:__
 
 - set CommandLine Tools version under Xcode Preferences > Locations
 
-![](https://github.com/rybodiddly/Poetry-Pyenv-Homebrew-Numpy-TensorFlow-on-Apple-Silicon-M1/blob/main/xcode.jpg)
+![](https://github.com/rybodiddly/Poetry-Pyenv-Homebrew-Numpy-TensorFlow-on-Apple-Silicon-M1/blob/main/xcode_prefs.jpg)
 
 - add SDKROOT Path to .zshrc file
 
