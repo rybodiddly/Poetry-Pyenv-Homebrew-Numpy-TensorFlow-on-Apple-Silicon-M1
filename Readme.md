@@ -158,7 +158,7 @@ poetry add ./packages/name_of_package_ARM64.whl
 
 __Download VSCode for MacOS Arm64:__
 - https://code.visualstudio.com/docs/?dv=darwinarm64&build=insiders
-- you might have to disable the pip protections in your .zshrc while setting up some of the python modules in vscode
+- you might have to temporarily disable the pip protections in your .zshrc while setting up some of the python modules in vscode
 ```
 #export PIP_REQUIRE_VIRTUALENV=true
 #gpip(){
