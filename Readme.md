@@ -159,7 +159,7 @@ numpy = {path = "packages/numpy-1.18.5-cp38-cp38-macosx_11_0_arm64.whl"}
 ```
 - the above snippet is using numpy as an example, adjust accordingly.
 - also note the python is set to `^3.8`, this is important for apples packages, as they are not compatible with `3.9`
-- if you want all your poetry versions to default to `3.8`, just use `pyenv local 3.8.6` in the base directory where you create and house your poetry projects.
+- if you want all your poetry projects to default to `3.8` instead of `3.9`, just use `pyenv local 3.8.6` in the base directory where you create and house your poetry projects. Or you could use `pyenv global 3.8.6`. Your call.
 - then install the package:
 `poetry add ./packages/name_of_package_ARM64.whl`
 
