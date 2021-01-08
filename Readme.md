@@ -162,7 +162,15 @@ numpy = {path = "packages/numpy-1.18.5-cp38-cp38-macosx_11_0_arm64.whl"}
 - if you want all your poetry projects to default to `3.8` instead of `3.9`, just use `pyenv local 3.8.6` in the base directory where you create and house your poetry projects. Or you could use `pyenv global 3.8.6`. Your call.
 - then install the package:
 `poetry add ./packages/name_of_package_ARM64.whl`
-
+- if you decide to install tensorflow, you might run into dependency errors such as:
+```
+Because tensorflow (2.4.0rc0 /Users/rybo/Documents/Projects/Python/tensorexample/packages/tensorflow_macos-0.1a1-cp38-cp38-macosx_11_0_arm64.whl) depends on numpy (>=1.19.2,<1.20.0)
+   and tensortut depends on numpy (1.18.5 packages/numpy-1.18.5-cp38-cp38-macosx_11_0_arm64.whl), tensorflow is forbidden.
+  So, because tensortut depends on tensorflow (2.4.0rc0 packages/tensorflow_macos-0.1a1-cp38-cp38-macosx_11_0_arm64.whl), version solving failed.
+```
+- to fix, just change the `.whl` on `tensorflow_macos-0.1a1-cp38-cp38-macosx_11_0_arm64.whl` to a `.zip`.
+- then unzip, navigate to the `tensorflow_macos-0.1a1.dist-info` directory and edit the `METADATA` files
+- edit the `Requires-Dist: numpy` and other conflicting versions to match apples supplied dependencies then zip it back up and change extension back to `whl`
 
 __Download VSCode for MacOS Arm64:__
 - https://code.visualstudio.com/docs/?dv=darwinarm64&build=insiders
