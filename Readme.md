@@ -151,10 +151,17 @@ __Manually Install Numpy & Tensorflow into Poetry Environment:__
 - extract
 - create a `packages` folder inside your new poetry project
 - copy numpy or tensorflow `whl` from the apple tensorflow's arm64 folder into the packages folder you created inside you poetry project
+`cd name_of_project`
+- edit the `[tool.poetry.dependencies]` section of the project.toml file to look like this:
 ```
-cd name_of_project
-poetry add ./packages/name_of_package_ARM64.whl
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = {path = "packages/numpy-1.18.5-cp38-cp38-macosx_11_0_arm64.whl"}
 ```
+- the above snippet is using numpy as an example, change to suite your needs.
+- then install the package:
+`poetry add ./packages/name_of_package_ARM64.whl`
+
 
 __Download VSCode for MacOS Arm64:__
 - https://code.visualstudio.com/docs/?dv=darwinarm64&build=insiders
