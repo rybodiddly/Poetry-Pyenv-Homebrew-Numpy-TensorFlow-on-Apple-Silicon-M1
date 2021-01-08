@@ -171,7 +171,7 @@ Because tensorflow (2.4.0rc0 /Users/rybo/Documents/Projects/Python/tensorexample
 - to fix, just change the `.whl` on `tensorflow_macos-0.1a1-cp38-cp38-macosx_11_0_arm64.whl` to a `.zip`.
 - then unzip, navigate to the `tensorflow_macos-0.1a1.dist-info` directory and edit the `METADATA` files
 - edit the `Requires-Dist: numpy` and other conflicting versions to match apples supplied dependencies
-- now you have to repackage as a `.whl`
+- now you have to repackage as a `.whl` (easier said than done, still working on this, if anyone had a solution please post)
 
 __Download VSCode for MacOS Arm64:__
 - https://code.visualstudio.com/docs/?dv=darwinarm64&build=insiders
