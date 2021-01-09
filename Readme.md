@@ -1,6 +1,6 @@
 # Setup guide for dev environment on Apple Silicon.
 
-A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Numpy and Tensorflow on new Apple Silicon M1 macs. Note that while working through this guide, it's best practice to restart your terminal after each installation / major change affecting your .zshrc file.
+A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Tensorflow, Numpy and Pandas on new Apple Silicon M1 macs. Note that while working through this guide, it's best practice to restart your terminal after each installation / major change affecting your .zshrc file.
 
 
 __Install Xcode:__
@@ -159,7 +159,8 @@ numpy = {path = "packages/numpy-1.18.5-cp38-cp38-macosx_11_0_arm64.whl"}
 grpcio = {path = "packages/grpcio-1.33.2-cp38-cp38-macosx_11_0_arm64.whl"}
 h5py = {path = "packages/h5py-2.10.0-cp38-cp38-macosx_11_0_arm64.whl"}
 tensorflow = {path = "packages/tensorflow-2.4.0rc0-cp38-cp38-macosx_11_0_arm64.whl"}
-tensorflow_addons = {path = "packages/tensorflow_addons-0.11.2+mlcompute-cp38-cp38-macosx_11_0_arm64.whl"} 
+tensorflow_addons = {path = "packages/tensorflow_addons-0.11.2+mlcompute-cp38-cp38-macosx_11_0_arm64.whl"}
+pandas = {path = "packages/pandas-1.2.0-cp38-cp38-macosx_11_1_arm64.whl"}
 ```
 - also note the version python is set to `^3.8`, this is important for apples packages, as they are not compatible with `3.9`
 - Note: if you want all your poetry projects to default to `3.8` instead of `3.9`, just use `pyenv local 3.8.6` in the base directory where you create and house your poetry projects. Or you could use `pyenv global 3.8.6`. Your call.
