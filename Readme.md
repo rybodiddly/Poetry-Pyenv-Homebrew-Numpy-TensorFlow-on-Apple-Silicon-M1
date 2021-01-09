@@ -150,7 +150,7 @@ __Manually Install Tensorflow (which will also install Numpy and other dependenc
 - https://github.com/apple/tensorflow_macos/releases/download/v0.1alpha1/tensorflow_macos-0.1alpha1.tar.gz
 - create a `packages` folder inside your new poetry project
 - extract then copy all of the `whl` files from the apple tensorflow release into the `your_new_project/packages/` folder
-- download the Repack of apples tensorflow from the releases section of this repository (the Repack resolves dependency issues)
+- download the Repack of apples tensorflow from the releases section of this repository and copy it into the `your_new_project/packages/` folder (the Repack resolves dependency issues)
 - edit the `[tool.poetry.dependencies]` section of the `project.toml` file inside your project folder to look like this:
 ```
 [tool.poetry.dependencies]
