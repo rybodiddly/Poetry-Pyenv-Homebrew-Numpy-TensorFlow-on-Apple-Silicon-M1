@@ -148,10 +148,9 @@ __Manually Install Tensorflow (which will also install Numpy and other dependenc
 
 - Download Apple's Tensorflow package.
 - https://github.com/apple/tensorflow_macos/releases/download/v0.1alpha1/tensorflow_macos-0.1alpha1.tar.gz
-- extract
 - create a `packages` folder inside your new poetry project
-- copy all of the `whl` files from the apple tensorflow release into the `your_new_project/packages/` folder
-- download the Repack of apples tensorflow from the releases section of this repository (repack corrects dependency issues)
+- extract then copy all of the `whl` files from the apple tensorflow release into the `your_new_project/packages/` folder
+- download the Repack of apples tensorflow from the releases section of this repository (the Repack resolves dependency issues)
 - edit the `[tool.poetry.dependencies]` section of the `project.toml` file inside your project folder to look like this:
 ```
 [tool.poetry.dependencies]
@@ -164,7 +163,7 @@ tensorflow_addons = {path = "packages/tensorflow_addons-0.11.2+mlcompute-cp38-cp
 ```
 - also note the version python is set to `^3.8`, this is important for apples packages, as they are not compatible with `3.9`
 - Note: if you want all your poetry projects to default to `3.8` instead of `3.9`, just use `pyenv local 3.8.6` in the base directory where you create and house your poetry projects. Or you could use `pyenv global 3.8.6`. Your call.
-- then install the package:
+- then install the packages while inside your project folder:
 `poetry add ./packages/tensorflow_addons-0.11.2+mlcompute-cp38-cp38-macosx_11_0_arm64.whl`
 
 
