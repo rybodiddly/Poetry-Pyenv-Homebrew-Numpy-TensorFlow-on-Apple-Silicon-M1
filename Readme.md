@@ -168,7 +168,7 @@ pillow = {path = "packages/Pillow-8.1.0-cp38-cp38-macosx_11_1_arm64.whl"}
 - Note: if you want all your poetry projects to default to `3.8` instead of `3.9`, just use `pyenv local 3.8.6` in the base directory where you create and house your poetry projects. Or you could use `pyenv global 3.8.6`. Your call.
 - then install the packages while inside your project folder:
 `poetry add ./packages/tensorflow-2.4.0rc0-cp38-cp38-macosx_11_0_arm64.whl`
-- after the above packages have been installed, you should be able to proceed with standard poetry installations of matplotlib, seaborn etc.
+- after the above packages have been installed, you should be able to proceed with standard poetry installations of matplotlib, etc.
 
 
 __Download VSCode for MacOS Arm64:__
