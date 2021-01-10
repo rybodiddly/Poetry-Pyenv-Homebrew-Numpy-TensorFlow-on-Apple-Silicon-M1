@@ -1,4 +1,4 @@
-# Setup guide for dev environment on Apple Silicon.
+# Setup Guide for Poetry Dev Environment on Apple Silicon.
 
 A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Tensorflow, Numpy, Pandas and Scipy on new Apple Silicon M1 macs running Big Sur 11.1. Note that while working through this guide, it's best practice to restart your terminal after each installation / major change affecting your .zshrc file.
 
