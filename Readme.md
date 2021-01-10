@@ -32,7 +32,7 @@ echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
 
 __Install brew dependencies:__
 
-`brew install openblas openssl readline sqlite3 xz zlib`
+`brew install libjpeg openblas openssl readline sqlite3 xz zlib`
 
 
 __Install Pyenv:__
