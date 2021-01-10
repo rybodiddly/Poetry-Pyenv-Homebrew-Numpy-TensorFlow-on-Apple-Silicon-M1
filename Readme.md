@@ -171,6 +171,10 @@ pillow = {path = "packages/Pillow-8.1.0-cp38-cp38-macosx_11_1_arm64.whl"}
 - after the above packages have been installed, you should be able to proceed with standard poetry installations of matplotlib, etc.
 
 
+__Known Issues:__
+- seaborn causes segmentation fault in scipy
+
+
 __Download VSCode for MacOS Arm64:__
 - https://code.visualstudio.com/docs/?dv=darwinarm64&build=insiders
 - you might have to temporarily disable the pip protections in your .zshrc while setting up some of the python modules in vscode
