@@ -1,6 +1,6 @@
 # Setup guide for dev environment on Apple Silicon.
 
-A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Tensorflow, Numpy and Pandas, Scipy on new Apple Silicon M1 macs running Big Sur 11.1. Note that while working through this guide, it's best practice to restart your terminal after each installation / major change affecting your .zshrc file.
+A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Tensorflow, Numpy, Pandas and Scipy on new Apple Silicon M1 macs running Big Sur 11.1. Note that while working through this guide, it's best practice to restart your terminal after each installation / major change affecting your .zshrc file.
 
 
 __Install Xcode:__
@@ -168,6 +168,7 @@ pillow = {path = "packages/Pillow-8.1.0-cp38-cp38-macosx_11_1_arm64.whl"}
 - Note: if you want all your poetry projects to default to `3.8` instead of `3.9`, just use `pyenv local 3.8.6` in the base directory where you create and house your poetry projects. Or you could use `pyenv global 3.8.6`. Your call.
 - then install the packages while inside your project folder:
 `poetry add ./packages/tensorflow-2.4.0rc0-cp38-cp38-macosx_11_0_arm64.whl`
+- after the above packages have been installed, you should be able to proceed with standard poetry installations of matplotlib, seaborn etc.
 
 
 __Download VSCode for MacOS Arm64:__
