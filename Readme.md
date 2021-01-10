@@ -1,6 +1,6 @@
 # Setup guide for dev environment on Apple Silicon.
 
-A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Tensorflow, Numpy and Pandas on new Apple Silicon M1 macs running Big Sur 11.1. Note that while working through this guide, it's best practice to restart your terminal after each installation / major change affecting your .zshrc file.
+A guide to setup a development environment using Homebrew, Python 3.9.1 & 3.8.6, Pyenv, Poetry, Tensorflow, Numpy and Pandas, Scipy on new Apple Silicon M1 macs running Big Sur 11.1. Note that while working through this guide, it's best practice to restart your terminal after each installation / major change affecting your .zshrc file.
 
 
 __Install Xcode:__
@@ -32,7 +32,7 @@ echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
 
 __Install brew dependencies:__
 
-`brew install openssl readline sqlite3 xz zlib`
+`brew install openblas openssl readline sqlite3 xz zlib`
 
 
 __Install Pyenv:__
@@ -150,7 +150,7 @@ __Manually Install Tensorflow (which will also install Numpy and other dependenc
 - https://github.com/apple/tensorflow_macos/releases/download/v0.1alpha1/tensorflow_macos-0.1alpha1.tar.gz
 - create a `packages` folder inside your new poetry project
 - extract then copy all of the `whl` files from the apple tensorflow release into the `your_new_project/packages/` folder
-- download the [Repack of apples tensorflow](https://github.com/rybodiddly/Poetry-Pyenv-Homebrew-Numpy-TensorFlow-on-Apple-Silicon-M1/releases/download/2.4.0rc0-Repack/tensorflow-2.4.0rc0-cp38-cp38-macosx_11_0_arm64.whl) from the releases section of this repository and copy it into the `your_new_project/packages/` folder (the Repack resolves dependency issues and includes a rebuild of pandas for M1)
+- download the [Repack of apples tensorflow](https://github.com/rybodiddly/Poetry-Pyenv-Homebrew-Numpy-TensorFlow-on-Apple-Silicon-M1/releases/download/2.4.0rc0-Repack/tensorflow-2.4.0rc0-cp38-cp38-macosx_11_0_arm64.whl) from the releases section of this repository and copy it into the `your_new_project/packages/` folder (the Repack resolves dependency issues and includes a rebuild of pandas, scipy and pillow for M1)
 - edit the `[tool.poetry.dependencies]` section of the `project.toml` file inside your project folder to look like this:
 ```
 [tool.poetry.dependencies]
@@ -161,6 +161,8 @@ h5py = {path = "packages/h5py-2.10.0-cp38-cp38-macosx_11_0_arm64.whl"}
 tensorflow = {path = "packages/tensorflow-2.4.0rc0-cp38-cp38-macosx_11_0_arm64.whl"}
 tensorflow_addons = {path = "packages/tensorflow_addons-0.11.2+mlcompute-cp38-cp38-macosx_11_0_arm64.whl"}
 pandas = {path = "packages/pandas-1.2.0-cp38-cp38-macosx_11_1_arm64.whl"}
+scipy = {path = "packages/scipy-1.6.0-cp38-cp38-macosx_11_1_arm64.whl"}
+pillow = {path = "packages/Pillow-8.1.0-cp38-cp38-macosx_11_1_arm64.whl"}
 ```
 - also note the version python is set to `^3.8`, this is important for apples packages, as they are not compatible with `3.9`
 - Note: if you want all your poetry projects to default to `3.8` instead of `3.9`, just use `pyenv local 3.8.6` in the base directory where you create and house your poetry projects. Or you could use `pyenv global 3.8.6`. Your call.
