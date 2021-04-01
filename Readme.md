@@ -41,7 +41,7 @@ __Install Pyenv:__
 
 `curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash`
 
-- add the following to youir .zshrc file:
+- add the following to your .zshrc file:
 ```
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
