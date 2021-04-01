@@ -117,7 +117,7 @@ __Protect Global & Brew Python Packages from Mishaps:__
 - add following to bottom of .zshrc
 ```
 ### Add these next lines to protect your system python from
-### polution from 3rd-party packages
+### pollution from 3rd-party packages
 
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
