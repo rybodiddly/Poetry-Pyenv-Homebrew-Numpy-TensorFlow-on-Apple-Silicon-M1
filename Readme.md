@@ -177,6 +177,7 @@ __Known Issues:__
 
 
 __Download VSCode for MacOS Arm64:__
+- EDIT: You no longer require the insiders edition of VSCode, the regular version is now a Universal Binary supporting Apple Silicon
 - https://code.visualstudio.com/docs/?dv=darwinarm64&build=insiders
 - you might have to temporarily disable the pip protections in your .zshrc while setting up some of the python modules in vscode
 ```
