@@ -100,7 +100,7 @@ __Install Python 3.8.6 in Pyenv:__
 CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include -I$(brew --prefix xz)/include" LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib -L$(brew --prefix xz)/lib" pyenv install --patch 3.8.6 <<(curl -sSL https://raw.githubusercontent.com/Homebrew/formula-patches/113aa84/python/3.8.3.patch\?full_index\=1)
 ```
 
-__Install Python 3.8.9 in Pyenv (submitted by @sergeyklay):__
+__Install Python 3.8.9 in Pyenv (submitted by [sergeyklay](https://github.com/sergeyklay)):__
 ```
 CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include -I$(brew --prefix xz)/include" LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib -L$(brew --prefix xz)/lib" pyenv install --patch 3.8.9 <<(curl -sSL https://raw.githubusercontent.com/Homebrew/formula-patches/master/python/3.8.7.patch\?full_index\=1)
 ```
