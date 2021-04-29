@@ -37,7 +37,7 @@ __Install brew dependencies:__
 
 __Install Pyenv:__
 
-- install Pyenv using ![Pyenv Installer](https://github.com/pyenv/pyenv-installer) instead of brew (will allow a working 3.9.1 install)
+- install Pyenv using [Pyenv Installer](https://github.com/pyenv/pyenv-installer) instead of brew (will allow a working 3.9.1 install)
 
 `curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash`
 
