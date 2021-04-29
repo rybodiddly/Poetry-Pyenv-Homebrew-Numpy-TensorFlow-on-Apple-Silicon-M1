@@ -92,7 +92,8 @@ export PATH="~/.local/bin:$PATH"
 
 __Install Python 3.9.1 in Pyenv:__
 
-`pyenv install 3.9.1`
+`pyenv install 3.9.1` or `update: version 3.9.4 now available, so modify as desired`
+
 
 
 __Install Python 3.8.6 in Pyenv:__
